@@ -1,5 +1,5 @@
 ! ==========================================================
-! 1.B 站核心锁定规则
+! 1. 用户指定的 B 站核心锁定规则 (严禁变动)
 ! ==========================================================
 /.*pcdn.*biliapi\.net/
 /.*pcdn.*biliapi.net/
@@ -174,7 +174,15 @@
 ||*.p2p.kuwo.cn^
 ||*.pcdn.kuwo.cn^
 
-! --- 星域云 / 网心 / 京东云 / 其他 PCDN 厂商 ---
+! --- 芒果 / 搜狐 / 56网 ---
+||stun.hitv.com^
+||p2p.tracker.tv.sohu.com^
+||p2p.le.com^
+||*.p2p.le.com^
+||pcdn.le.com^
+||*.pcdn.le.com^
+
+! --- 星域云 / 网心 / 京东云 / 华为云 PCDN ---
 ||conf-darwin.xycdn.com^
 ||seeds*-darwin.xycdn.com^
 ||seeds-open.xycdn.com^
@@ -192,6 +200,7 @@
 ||*.jcloudp2p.com^
 ||jcloudp2p.com^
 ||*.jcloudp2p.net^
+||p2p.huawreicloud.com^
 
 ! --- 安全 / 反诈监测 (gjfzpt) ---
 ||gjfzpt.cn^
@@ -205,7 +214,7 @@
 ||*.stun.baidu.com^
 ||p2p.baidupcs.com^
 
-! --- 其他增补 ---
+! --- 其他增补 (含 SMAdHosts 提取项) ---
 ||p-cdn.com^
 ||pscdn.co^
 ||p.scdn.co^
@@ -223,3 +232,5 @@
 ||*.p2p.pdim.gs^
 ||*.cdn-ali.com^
 ||*.cdn-go.com^
+||*.vnet.cn^
+||*.mcdn.vnet.cn^
