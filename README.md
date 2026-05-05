@@ -34,17 +34,17 @@ https://raw.githubusercontent.com/zhecydn/adguard-pcdn-rule/main/pcdn.txt
 如果你需要纯域名格式用于软路由屏蔽，可以参考本项目提取的域名逻辑，将其直接填入“黑名单”或“屏蔽列表”中。
 
 ⚠️ 补充说明
-关于 WebRTC：建议配合浏览器的 WebRTC Control 插件使用，效果更佳。
+关于 WebRTC：建议配合浏览器的 WebRTC Control 以及adguard相关插件使用，效果更佳。
 
 业务回退机制：本规则拦截的是 P2P 调度域名。拦截成功后，播放器会自动回退到正常的 CDN 直连模式，不会影响视频观看，但会显著降低上传带宽占用。
 
 🤝 鸣谢来源
 感谢以下项目提供的原始规则支持（排名不分先后）：
 
-anti-AD
+[anti-AD](https://github.com/privacy-protection-tools/anti-AD)
 
-SM-Ad-FuckU-hosts
+[SM-Ad-FuckU-hosts](https://www.google.com/search?q=https://github.com/2Gardon/SM-Ad-FuckU-hosts)
 
-uselibrary/PCDN
+[uselibrary/PCDN](https://www.google.com/search?q=https://github.com/uselibrary/PCDN)
 
-thhbdd/Block-pcdn-domains
+[thhbdd/Block-pcdn-domains](https://www.google.com/search?q=https://github.com/thhbdd/Block-pcdn-domains)
