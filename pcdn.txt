@@ -34,7 +34,7 @@
 ||ac.dun.163.com^
 ||fp-upload.dun.163.com^
 
-! --- 咪咕 / 爱奇艺 / 优酷 ---
+! --- 咪咕 / 爱奇艺 / 优酷 /芒果---
 ||p2p.miguvideo.com^
 ||*.p2p.miguvideo.com^
 ||*.pcdn.miguvideo.com^
@@ -62,6 +62,7 @@
 ||valf.atm.youku.com^
 ||static.atm.youku.com^
 ||valc.atm.youku.com^
+||stun.hitv.com^
 
 ! --- 喜马拉雅 / 蜻蜓 ---
 ||*.p2p.ximalaya.com^
