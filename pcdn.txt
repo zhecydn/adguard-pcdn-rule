@@ -12,12 +12,98 @@
 ||*-p2p-*.chat.bilibili.com^
 ! 追补 Bilibili 规则
 ||*-pcdn-*.biliapi.net^
-||v1d.szbdyd.com^
+||*.mcdn.bilivideo.com^
+||*.mcdn.bilivideo.net^
+||*.mcdn.bilivideo.cn^
+||*.szbdyd.com^
 
 ! ==========================================================
-! 2. 物理去重后的汇总规则 (包含用户提供、anti-AD 及图片补充)
+! 2. 物理去重后的汇总规则
 ! ==========================================================
-! 腾讯 / QQ 音乐
+
+! --- 网易 (163 / netease) ---
+||163jiasu.com^
+||sf.163.com^
+||*.p2p.163.com^
+||*.pcdn.163.com^
+||*.p2p.netease.com^
+||*.pcdn.netease.com^
+||sd-gl.xinqiucc.com^
+||xyp-n.kuiniuca.com^
+||sdk1xyajs.data.kuiniuca.com^
+||ac.dun.163.com^
+||fp-upload.dun.163.com^
+
+! --- 咪咕 / 爱奇艺 / 优酷 ---
+||p2p.miguvideo.com^
+||*.p2p.miguvideo.com^
+||*.pcdn.miguvideo.com^
+||p2p.migu.cn^
+||*.p2p.migu.cn^
+||*.pcdn.migu.cn^
+||p2p.m.iqiyi.com^
+||*.p2p.iqiyi.com^
+||pcdn.iqiyi.com^
+||*.pcdn.iqiyi.com^
+||hcdn.qiyi.com^
+||pdata.video.qiyi.com^
+||cachecdn.v.iqiyi.com^
+||meta-cdn.video.iq.com^
+||tpa-hcdn.iqiyi.com^
+||data6.video.iqiyi.com^
+||p2p.youku.com^
+||*.p2p.youku.com^
+||pcdn.youku.com^
+||*.pcdn.youku.com^
+||atm.youku.com^
+||fvid.atm.youku.com^
+||html.atm.youku.com^
+||valb.atm.youku.com^
+||valf.atm.youku.com^
+||static.atm.youku.com^
+||valc.atm.youku.com^
+
+! --- 喜马拉雅 / 蜻蜓 ---
+||*.p2p.ximalaya.com^
+||*.pcdn.ximalaya.com^
+||*.p2p.qingting.fm^
+||*.pcdn.qingting.fm^
+
+! --- 迅雷 / YY / 暴风 / 龙珠 / 熊猫 / 花椒 / PPTV ---
+||*.p2p.xunlei.com^
+||*.pcdn.xunlei.com^
+||*.p2p.baofeng.com^
+||*.pcdn.baofeng.com^
+||*.p2p.yy.com^
+||*.pcdn.yy.com^
+||p2p.pplive.com^
+||*.p2p.pplive.com^
+||pcdn.pplive.com^
+||*.pcdn.pplive.com^
+||p2p.pptv.com^
+||*.p2p.pptv.com^
+||pcdn.pptv.com^
+||*.pcdn.pptv.com^
+||*.p2p.longzhu.com^
+||*.pcdn.longzhu.com^
+||*.p2p.panda.tv^
+||*.pcdn.panda.tv^
+||*.p2p.huajiao.com^
+||*.pcdn.huajiao.com^
+||*.p2p.inke.cn^
+||*.pcdn.inke.cn^
+
+! --- 腾讯 (视频/音乐/游戏) ---
+||hcdn.video.qq.com^
+||pcdn.video.qq.com^
+||vodlive.qq.com^
+||iwan-s.video.qq.com^
+||gdt.qq.com^
+||cm.l.qq.com^
+||isure6.stream.qqmusic.qq.com^
+||tp2p.kg.qq.com^
+||*.tp2p.kg.qq.com^
+||twns.p2ptun.qq.com^
 ||stun.qqlive.qq.com^
 ||musicstun.p2p.qq.com^
 ||p2p.qq.com^
@@ -27,10 +113,8 @@
 ||stun-a1.qq.com^
 ||signal.qvb.qcloud.com^
 ||stun*.qvb.qcloud.com^
-||tp2p.kg.qq.com^
-||twns.p2ptun.qq.com^
 
-! 快手
+! --- 快手 / 字节 ---
 /^(.+)-p2p-pull\.(video|live)-voip\.com$/
 /^(.+)-p2p\.pull\.yximgs\.com$/
 /^(.+)-p2p-(.+)\.pull\.yximgs\.com$/
@@ -41,8 +125,13 @@
 ||*pcdn*.xxpkg.com^
 ||p2p-punch.xxpkg.com^
 ||p2p-punch-*.xxpkg.com^
+||pull-rtmp-l11.ixigua.com^
+||push-rtmp-l11.ixigua.com^
+||pull-hs-f5-hot.flive.douyincdn.com^
 
-! 斗鱼
+! --- 斗鱼 / 虎牙 ---
+||p2p.douyucdn.cn^
+||*.pcdn.douyucdn.cn^
 ||p2plog.douyucdn.cn^
 ||p2perrorlog.douyucdn.cn^
 ||p2pchunk-table.douyucdn.cn^
@@ -55,49 +144,42 @@
 ||p2pchunk-*.douyucdn.cn^
 ||p2pable-*.douyucdn.cn^
 ||dyp2p-*.douyucdn2.cn^
-
-! 虎牙
-||*.p2p.huya.com^
-
-! 芒果tv
-||stun.hitv.com^
-
-! 56网/搜狐视频
-||p2p.tracker.tv.sohu.com^
-
-! 星域云/网心
-||conf-darwin.xycdn.com^
-||seeds*-darwin.xycdn.com^
-||seeds-open.xycdn.com^
-||ttxyajs.data.kuiniuca.com^
-||sd-gl.xycdn.com^
-
-! 网易云音乐 (根据图片补充)
-||sd-gl.xinqiucc.com^
-||xyp-n.kuiniuca.com^
-||sdk1xyajs.data.kuiniuca.com^
-||ac.dun.163.com^
-||fp-upload.dun.163.com^
-
-! 金山云
-||*.stun.yfp2p.net^
-
-! 来自 anti-AD pcdn.txt 的增补规则 (已排除重复项)
-||p2p.m.iqiyi.com^
 ||p2p.huya.com^
-||*.p2p.miguvideo.com^
-||*.pcdn.miguvideo.com^
-||p2p.migu.cn^
-||*.p2p.migu.cn^
-||*.pcdn.migu.cn^
-||p2p.youku.com^
-||*.p2p.youku.com^
-||pcdn.youku.com^
-||*.pcdn.youku.com^
+||*.p2p.huya.com^
+||*.pcdn.huya.com^
+
+! --- 酷狗 / 酷我 ---
+||trackercdn.kugou.com^
+||mobiletrackercdn.kugou.com^
+||d.kugou.com^
+||*.p2p.kugou.com^
+||*.pcdn.kugou.com^
+||*.p2p.kuwo.cn^
+||*.pcdn.kuwo.cn^
+
+! --- 芒果 / 搜狐 / 56网 ---
+||stun.hitv.com^
+||*.pcdn.mgtv.com^
+||p2p.tracker.tv.sohu.com^
 ||p2p.le.com^
 ||*.p2p.le.com^
 ||pcdn.le.com^
 ||*.pcdn.le.com^
+
+! --- 星域云 / 网心 (PCDN服务商) ---
+||conf-darwin.xycdn.com^
+||seeds*-darwin.xycdn.com^
+||seeds-open.xycdn.com^
+||sd-gl.xycdn.com^
+||ttxyajs.data.kuiniuca.com^
+
+! --- 金山云 ---
+||*.stun.yfp2p.net^
+
+! --- 其他增补 (已排除重复项) ---
+||p-cdn.com^
+||pscdn.co^
+||p.scdn.co^
 ||p2p.wasu.tv^
 ||*.p2p.wasu.tv^
 ||pcdn.wasu.tv^
@@ -106,42 +188,5 @@
 ||*.p2p.fun.tv^
 ||pcdn.fun.tv^
 ||*.pcdn.fun.tv^
-||*.pcdn.mgtv.com^
-||*.p2p.xunlei.com^
-||*.pcdn.xunlei.com^
 ||*.p2p.kankan.com^
 ||*.pcdn.kankan.com^
-||*.p2p.baofeng.com^
-||*.pcdn.baofeng.com^
-||*.p2p.163.com^
-||*.pcdn.163.com^
-||*.p2p.netease.com^
-||*.pcdn.netease.com^
-||p2p.pplive.com^
-||*.p2p.pplive.com^
-||pcdn.pplive.com^
-||*.pcdn.pplive.com^
-||p2p.pptv.com^
-||*.p2p.pptv.com^
-||pcdn.pptv.com^
-||*.pcdn.pptv.com^
-||*.pcdn.douyucdn.cn^
-||*.pcdn.huya.com^
-||*.p2p.longzhu.com^
-||*.pcdn.longzhu.com^
-||*.p2p.panda.tv^
-||*.pcdn.panda.tv^
-||*.p2p.inke.cn^
-||*.pcdn.inke.cn^
-||*.p2p.huajiao.com^
-||*.pcdn.huajiao.com^
-||*.p2p.yy.com^
-||*.pcdn.yy.com^
-||*.p2p.kuwo.cn^
-||*.pcdn.kuwo.cn^
-||*.p2p.kugou.com^
-||*.pcdn.kugou.com^
-||*.p2p.ximalaya.com^
-||*.pcdn.ximalaya.com^
-||*.p2p.qingting.fm^
-||*.pcdn.qingting.fm^
